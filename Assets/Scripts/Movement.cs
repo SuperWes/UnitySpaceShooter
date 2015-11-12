@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour {
 
 	void Update () {
 		var horizontal = -Input.GetAxisRaw ("Horizontal") * Time.deltaTime;
-		var vertical = -Input.GetAxisRaw ("Vertical") * Time.deltaTime;
+		var vertical = Input.GetAxisRaw ("Vertical") * Time.deltaTime;
 		var horizontal2 = Input.GetAxisRaw ("Horizontal2") * Time.deltaTime;
 		var vertical2 = -Input.GetAxisRaw ("Vertical2") * Time.deltaTime;
 
