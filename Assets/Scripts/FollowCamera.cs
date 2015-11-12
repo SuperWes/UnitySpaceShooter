@@ -20,9 +20,11 @@ public class FollowCamera : MonoBehaviour {
 		Vector3 forward = target.transform.forward * 2.0f;
 		Vector3 needPos = target.transform.position - forward;
 		
-		transform.position = Vector3.SmoothDamp(transform.position, needPos,
-		                                        ref velocity,0.05f);
+		transform.position = Vector3.SmoothDamp(transform.position, needPos, ref velocity,0.05f);
+//		transform.position = needPos;
+
 		transform.LookAt (target.transform);
+
 		transform.rotation = target.transform.rotation;
 	}
 }

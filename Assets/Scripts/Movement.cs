@@ -6,10 +6,10 @@ public class Movement : MonoBehaviour {
 	public float movementSpeed = 120f;
 	public float rotationSpeed = 120f;
 
-	private Rigidbody rigidBody;
+//	private Rigidbody rigidBody;
 
 	void Start() {
-		rigidBody = GetComponent<Rigidbody> ();
+//		rigidBody = GetComponent<Rigidbody> ();
 	}
 
 	void Update () {
